@@ -16,7 +16,7 @@ class ActionController
         $hidden = $_POST['hidden'];
         $id = $_POST['id'];
         $page = new PageModel();
-        $page->updateOne($title, $content, $hidden, $log, $id);
+        $page->updateOne($title, $content, $hidden, $id);
         header('Location: /view/edit');
     }
 }

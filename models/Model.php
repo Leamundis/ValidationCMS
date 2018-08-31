@@ -37,7 +37,8 @@ class Model
 
     public function updateOne($title, $content, $hidden, $id)
     {
-        $request = $this->dbConnec->prepare('UPDATE ' . $this->tableName . ' SET title="' . $title . '", content="' . $content . '", hidden="' . $hidden . '"  WHERE id="' . $id . '"');
+        $request = $this->dbConnec->prepare('UPDATE ' . $this->tableName . ' SET title = "' . $title . '", content = "' . $content . '", hidden = "' . $hidden . '"  WHERE id = "' . $id . '"');
+ 
         $request->execute();
         return true;
     }
