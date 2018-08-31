@@ -15,13 +15,6 @@
                     <input type="checkbox" name="hidden" value="0"> Hidden
                 <?php endif; ?>
             </td>
-            <td>
-                <?php if($values->log == 1): ?>
-                    <input type="checkbox" name="log" value="0" checked> Log
-                <?php else: ?>
-                    <input type="checkbox" name="log" value="1"> Log
-                <?php endif; ?>
-            </td>
             <input type="hidden" name="id" value="<?php echo $values->id ?>">
         </tr>
         <input type="submit" value="Update">

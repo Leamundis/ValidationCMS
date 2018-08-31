@@ -14,7 +14,6 @@ class ActionController
         $title = $_POST['title'];
         $content = $_POST['content'];
         $hidden = $_POST['hidden'];
-        $log = $_POST['log'];
         $id = $_POST['id'];
         $page = new PageModel();
         $page->updateOne($title, $content, $hidden, $log, $id);

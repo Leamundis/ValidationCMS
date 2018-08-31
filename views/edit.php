@@ -14,7 +14,7 @@
             </td>
             <td>
                 <form method="POST" action="/action/deleteOne">
-                    <button type="submit" name="id" value="<?php echo $value->title ?>">X</button>
+                    <button type="submit" name="id" value="<?php echo $value->id ?>">X</button>
                 </form>
             </td>
         </tr>
