@@ -22,6 +22,7 @@
                     <input type="checkbox" name="log" value="0"> Log
                 <?php endif; ?>
             </td>
+            <input type="hidden" name="id" value="<?php echo $values->id ?>">
         </tr>
         <input type="submit" value="Update">
 </form>

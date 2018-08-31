@@ -35,9 +35,9 @@ class Model
         return true;
     }
 
-    public function updateOne($title, $content, $hidden, $log)
+    public function updateOne($title, $content, $hidden, $log, $id)
     {
-        $request = $this->dbConnec->prepare('UPDATE ' . $this->tableName . ' SET title="' . $title . '", content="' . $content . '", hidden="' . $hidden . '", log="' . $log . '"  WHERE title="' . $title . '"');
+        $request = $this->dbConnec->prepare('UPDATE ' . $this->tableName . ' SET title="' . $title . '", content="' . $content . '", hidden="' . $hidden . '", log="' . $log . '"  WHERE id="' . $id . '"');
         $request->execute();
         return true;
     }
