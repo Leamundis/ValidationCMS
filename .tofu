@@ -1,0 +1,12 @@
+[DATABASE]
+DB_NAME=my_cms
+USER=root
+PASS=0000
+
+[SESSION]
+SESSION_KEY=currentUser
+LOGIN_URI=/auth/login
+
+[TEMPLATES]
+CLASS_SUFFIX=Controller
+TEMPLATE_DIRECTORY=views
